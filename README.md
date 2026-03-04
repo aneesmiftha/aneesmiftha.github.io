@@ -23,4 +23,4 @@ I analyzed 12 months of historical trip data (March 2023 - February 2024).
 * **Digital Marketing:** Focus ad campaigns at the top 5 "Casual" start stations (waterfront/tourist areas).
 
 ## 5. Visualizations
-[Link to my Interactive Tableau Dashboard](PASTE_YOUR_TABLEAU_LINK_HERE)
+[Link to my Interactive Tableau Dashboard](https://public.tableau.com/views/CyclisticBike-ShareAnalysisMemberVsCasualBehaviour/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
