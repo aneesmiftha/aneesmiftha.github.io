@@ -132,22 +132,42 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <section id="projects" class="page-section bg-primary text-white">
+             <section id="projects" class="page-section bg-primary text-white">
   <div class="container">
     <h2 class="page-section-heading text-center text-uppercase text-white">Cyclistic Bike-Share Analysis</h2>
-    <p><strong>Tools Used:</strong> SQL (Google BigQuery), Tableau Public</p>
-    <p><strong>Problem Statement:</strong> The objective of this analysis was to understand how annual members and casual riders use Cyclistic bikes differently and identify opportunities to convert casual riders into annual members.</p>
-    <p><strong>Data Preparation:</strong> The dataset containing bike trip records was uploaded to Google BigQuery. Data cleaning steps included removing duplicate ride IDs, validating ride durations, and creating a ride length column to analyze trip duration.</p>
-    <p><strong>Key Insights:</strong></p>
-    <ul>
-      <li>Members take significantly more rides than casual riders.</li>
-      <li>Casual riders have longer average ride durations (~21 minutes) compared to members (~12 minutes).</li>
-      <li>Casual riders ride more on weekends, while members ride more consistently during weekdays.</li>
-      <li>Ride activity peaks in summer months (June–August).</li>
-    </ul>
-    <p><strong>Business Recommendation:</strong> Cyclistic could target casual riders with weekend promotions, seasonal membership discounts, and marketing campaigns highlighting the cost benefits of annual memberships.</p>
-    <p><strong>Dashboard:</strong> <a href="https://public.tableau.com/views/CyclisticBike-ShareAnalysisMemberVsCasualBehaviour/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="text-white">View Interactive Dashboard</a></p>
-    <p><strong>Download Project PDF:</strong> <a href="Cyclistic%20Bike-Share%20Analysis.pdf" target="_blank" class="text-white">Download PDF</a></p>
+    
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <p class="lead text-center"><strong>Tools Used:</strong> SQL (Google BigQuery), Python, Tableau Public</p>
+        <hr class="divider-light" />
+        
+        <p><strong>Problem Statement:</strong> Analyzed 12 months of historical trip data to identify behavioral differences between annual members and casual riders, providing data-driven strategies to increase membership conversions.</p>
+        
+        <p><strong>Data Processing & Scale:</strong> 
+          Managed a large-scale dataset of over <strong>6 million records</strong>. 
+          To overcome platform upload limits, I utilized <strong>Python</strong> to chunk the data into manageable segments before migrating to <strong>Google BigQuery</strong>. 
+          Cleaning steps included removing ~560,000 duplicate records, filtering out rides under 1 minute, and calculating ride length metrics.
+        </p>
+
+        <p><strong>Key Insights:</strong></p>
+        <ul>
+          <li><strong>Volume:</strong> Members maintain higher overall ride volume, peaking during weekday commuting hours.</li>
+          <li><strong>Duration:</strong> Casual riders average <strong>21 minutes</strong> per trip, nearly double the 12-minute average of members.</li>
+          <li><strong>Timing:</strong> Casual ridership spikes significantly on weekends and during the summer peak (June–August).</li>
+        </ul>
+
+        <p><strong>Business Strategy:</strong> Recommended targeted weekend-only membership passes and seasonal summer promotions to convert high-duration casual users into long-term subscribers.</p>
+        
+        <div class="text-center mt-4">
+          <a href="https://public.tableau.com/views/CyclisticBike-ShareAnalysisMemberVsCasualBehaviour/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="btn btn-outline-light btn-xl mx-2">
+            <i class="fas fa-chart-bar mr-2"></i>View Interactive Dashboard
+          </a>
+          <a href="Cyclistic%20Bike-Share%20Analysis.pdf" target="_blank" class="btn btn-outline-light btn-xl mx-2">
+            <i class="fas fa-download mr-2"></i>Download Case Study PDF
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
                 <!-- About Section Content-->
